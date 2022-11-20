@@ -74,3 +74,14 @@ select {
     scroll-behavior: auto !important;
   }
 }
+
+a {
+  display: inline-block;
+}
+
+body {
+  background: hsl(185, 75%, 39%);
+}
+
+.card {
+}
