@@ -6,6 +6,16 @@
   --clr-primary-300: hsl(227, 10%, 46%);
 
   --clr-neutral-100: hsl(0, 0%, 59%);
+
+  --fw-light: 400;
+  --fw-regular: 500;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
+
+  --fs-small: clamp(0.88rem, 0.83rem + 0.24vw, 1rem);
+  --fs-medium: clamp(1.09rem, 1rem + 0.47vw, 1.33rem);
+  --fs-large: clamp(1.37rem, 1.21rem + 0.8vw, 1.78rem);
+  --fs-x-large: clamp(1.71rem, 1.45rem + 1.29vw, 2.37rem);
 }
 
 /* https://piccalil.li/blog/a-modern-css-reset */
@@ -79,7 +89,13 @@ select {
   font-family: var(--ff-primary-100);
 }
 
-h3 {
+h3,
+.card_header-container p {
+  font-size: var(--fs-large);
+}
+
+.card_footer-stats a {
+  /* font-size: var(--fs) */
 }
 
 a {
@@ -91,9 +107,9 @@ body {
 }
 
 .card {
-  width: min(375px - 1em, 100%);
+  width: min(375px - 2em, 100%);
   background-color: white;
-  margin: 0 auto;
+  margin: 16px auto 0 auto;
   border-radius: 10px;
 }
 
@@ -123,5 +139,6 @@ body {
 .card_footer-stats {
   display: flex;
   flex-direction: column;
+  width: min(80px, 100%);
   margin: 1.5em 0 1.5em 0;
 }
