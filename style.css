@@ -104,6 +104,16 @@ a {
 
 body {
   background: hsl(185, 75%, 39%);
+  background-image: url("images/bg-pattern-top.svg"),
+    url("images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: top -510px left -300px, bottom -510px right -300px;
+}
+
+@media (max-width: 600px) {
+  body {
+    background-position: top -510px left -700px, bottom -510px right -700px;
+  }
 }
 
 .card {
@@ -165,4 +175,5 @@ img {
   flex-direction: column;
   width: min(80px, 100%);
   margin: 1.5em 0 1.5em 0;
+  align-items: center;
 }
